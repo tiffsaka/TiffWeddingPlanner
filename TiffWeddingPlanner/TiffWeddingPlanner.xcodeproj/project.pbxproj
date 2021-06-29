@@ -51,8 +51,8 @@
 		8E7AE187268A39F50078675F /* ProtocolPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7AE182268A39F50078675F /* ProtocolPlaceholder.swift */; };
 		8E7AE19F268A3B000078675F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7AE19D268A3AFF0078675F /* HomeViewController.swift */; };
 		8E7AE1A0268A3B000078675F /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7AE19E268A3B000078675F /* TabViewController.swift */; };
-		8E7AE1A8268ABC160078675F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7AE1A6268ABC160078675F /* User.swift */; };
-		8E7AE1A9268ABC160078675F /* Wedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7AE1A7268ABC160078675F /* Wedding.swift */; };
+		CB7D0E5D268AC3D100F896B7 /* Wedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7D0E5B268AC3D100F896B7 /* Wedding.swift */; };
+		CB7D0E5E268AC3D100F896B7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7D0E5C268AC3D100F896B7 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,9 +102,9 @@
 		8E7AE182268A39F50078675F /* ProtocolPlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolPlaceholder.swift; sourceTree = "<group>"; };
 		8E7AE19D268A3AFF0078675F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8E7AE19E268A3B000078675F /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
-		8E7AE1A6268ABC160078675F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = TiffWeddingPlanner/Models/User.swift; sourceTree = SOURCE_ROOT; };
-		8E7AE1A7268ABC160078675F /* Wedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wedding.swift; path = TiffWeddingPlanner/Models/Wedding.swift; sourceTree = SOURCE_ROOT; };
 		C22E67341B88172CC6BBF571 /* Pods-TiffWeddingPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiffWeddingPlanner.debug.xcconfig"; path = "Target Support Files/Pods-TiffWeddingPlanner/Pods-TiffWeddingPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		CB7D0E5B268AC3D100F896B7 /* Wedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wedding.swift; sourceTree = "<group>"; };
+		CB7D0E5C268AC3D100F896B7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DAE8DE8FCA2670D3952B1DC2 /* Pods_TiffWeddingPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiffWeddingPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -149,10 +149,10 @@
 		8E7AE0BB268A35D00078675F /* TiffWeddingPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				CB7D0E5A268AC37D00F896B7 /* Models */,
 				8E7AE0D2268A37690078675F /* Resources */,
 				8E7AE108268A38EB0078675F /* Services */,
 				8E7AE107268A38DF0078675F /* ModelControllers */,
-				8E7AE116268A39300078675F /* Models */,
 				8E7AE115268A39290078675F /* Views */,
 				8E7AE19D268A3AFF0078675F /* HomeViewController.swift */,
 				8E7AE19E268A3B000078675F /* TabViewController.swift */,
@@ -207,16 +207,6 @@
 				8E7AE156268A39D90078675F /* Tasks */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		8E7AE116268A39300078675F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8E7AE1A6268ABC160078675F /* User.swift */,
-				8E7AE1A7268ABC160078675F /* Wedding.swift */,
-			);
-			name = Models;
-			path = "New Group/Models";
 			sourceTree = "<group>";
 		};
 		8E7AE132268A39D80078675F /* Budget */ = {
@@ -385,6 +375,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CB7D0E5A268AC37D00F896B7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB7D0E5C268AC3D100F896B7 /* User.swift */,
+				CB7D0E5B268AC3D100F896B7 /* Wedding.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -518,6 +517,7 @@
 				8E7AE178268A39DA0078675F /* GuestListViewModel.swift in Sources */,
 				8E7AE176268A39DA0078675F /* TasksViewModel.swift in Sources */,
 				8E7AE170268A39DA0078675F /* AccountViewModel.swift in Sources */,
+				CB7D0E5D268AC3D100F896B7 /* Wedding.swift in Sources */,
 				8E7AE10B268A39120078675F /* AuthService.swift in Sources */,
 				8E7AE15E268A39DA0078675F /* BudgetViewModel.swift in Sources */,
 				8E7AE174268A39DA0078675F /* RegistriesViewController.swift in Sources */,
@@ -528,7 +528,6 @@
 				8E7AE183268A39F50078675F /* Utilities.swift in Sources */,
 				8E7AE111268A39200078675F /* UserController.swift in Sources */,
 				8E7AE185268A39F50078675F /* ExtensionPlaceholder.swift in Sources */,
-				8E7AE1A9268ABC160078675F /* Wedding.swift in Sources */,
 				8E7AE179268A39DA0078675F /* GuestListViewController.swift in Sources */,
 				8E7AE0BD268A35D00078675F /* AppDelegate.swift in Sources */,
 				8E7AE187268A39F50078675F /* ProtocolPlaceholder.swift in Sources */,
@@ -537,10 +536,10 @@
 				8E7AE163268A39DA0078675F /* PlaceholderViewController.swift in Sources */,
 				8E7AE160268A39DA0078675F /* SignUpViewController.swift in Sources */,
 				8E7AE171268A39DA0078675F /* AccountTableViewCell.swift in Sources */,
-				8E7AE1A8268ABC160078675F /* User.swift in Sources */,
 				8E7AE0BF268A35D00078675F /* SceneDelegate.swift in Sources */,
 				8E7AE1A0268A3B000078675F /* TabViewController.swift in Sources */,
 				8E7AE161268A39DA0078675F /* WelcomeViewController.swift in Sources */,
+				CB7D0E5E268AC3D100F896B7 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,8 +680,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KA3ACSM694;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TiffWeddingPlanner/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -701,8 +701,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KA3ACSM694;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TiffWeddingPlanner/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
