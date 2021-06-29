@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="aLz-qB-i6R">
+            <objects>
+                <viewController storyboardIdentifier="homeVC" id="IAl-ED-Kfp" customClass="HomeViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W3D-Cn-fnt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Wedding Planner!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bo5-ZZ-yp7">
+                                <rect key="frame" x="31" y="216" width="352" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0IM-6P-ilm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="AccentColor"/>
+                        <constraints>
+                            <constraint firstItem="bo5-ZZ-yp7" firstAttribute="width" secondItem="W3D-Cn-fnt" secondAttribute="width" multiplier="0.85" id="AE8-tZ-Yqt"/>
+                            <constraint firstItem="bo5-ZZ-yp7" firstAttribute="top" secondItem="0IM-6P-ilm" secondAttribute="top" constant="128" id="D6i-8v-FE3"/>
+                            <constraint firstItem="bo5-ZZ-yp7" firstAttribute="height" secondItem="W3D-Cn-fnt" secondAttribute="height" multiplier="0.075" id="HcK-Qp-JZJ"/>
+                            <constraint firstItem="bo5-ZZ-yp7" firstAttribute="centerX" secondItem="0IM-6P-ilm" secondAttribute="centerX" id="vkB-g3-9V0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" image="house.fill" catalog="system" id="S0H-Zo-EVi"/>
+                    <navigationItem key="navigationItem" id="zT2-30-C45"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Vj-iW-1gA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="65"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GFJ-1v-pXo">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController-Tkp-mA-GHD" automaticallyAdjustsScrollViewInsets="NO" id="Tkp-mA-GHD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="Nwh-tA-0R6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GUS-GO-NZX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g5A-xN-gab">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="IAl-ED-Kfp" kind="relationship" relationship="rootViewController" id="mav-gq-wE7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWa-ou-qD3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

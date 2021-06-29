@@ -1,0 +1,6 @@
+framework module Pods_TiffWeddingPlanner {
+  umbrella header "Pods-TiffWeddingPlanner-umbrella.h"
+
+  export *
+  module * { export * }
+}
